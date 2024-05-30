@@ -1,0 +1,29 @@
+import React from "react";
+
+export default function page() {
+  return (
+    <div
+      id="content"
+      className="lan-mn"
+      style={{
+        display: "block",
+        backgroundImage:
+          'url("http://elclawoffice.mn/media/elc/content/huudasnii_background/corporate/crop9.jpg")',
+        backgroundSize: "cover",
+        minHeight: "100vh",
+      }}
+    >
+      <section className="container">
+        <div className="news-list-main nw-padding-top">
+          <h2 className="caption-title">Хамт олон</h2>
+
+          <div className="row">
+            <div className="clearfix"></div>
+          </div>
+          <div className="clearfix"></div>
+        </div>
+      </section>
+      <input type="hidden" value="" id="sqqs" />
+    </div>
+  );
+}

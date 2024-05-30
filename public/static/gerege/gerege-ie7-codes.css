@@ -1,0 +1,19 @@
+/* 
+.gerege-icon-code { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
+.gerege-icon-char-r { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.gerege-icon-char-e { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe802;&nbsp;'); }
+.gerege-icon-char-g { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe803;&nbsp;'); } */
+
+.gerege-icon-code,
+.gerege-icon-char-r,
+.gerege-icon-char-e,
+.gerege-icon-char-g {
+  zoom: 1;
+}
+
+.gerege-icon-code::after,
+.gerege-icon-char-r::after,
+.gerege-icon-char-e::after,
+.gerege-icon-char-g::after {
+  content: "\e800\00a0";
+}
