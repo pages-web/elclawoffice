@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -26,7 +27,8 @@ export default function page() {
               хуульчдын<span className="redactor-invisible-space"></span>
             </p>
             <figure>
-              <img
+              <Image
+                alt=""
                 src="http://elclawoffice.mn/media/elc/content/43527306_10213456267223329_8596360795082719232_n.jpg"
                 style={{
                   width: "290px",

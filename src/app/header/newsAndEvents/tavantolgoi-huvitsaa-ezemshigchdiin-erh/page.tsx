@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -43,7 +44,12 @@ export default function page() {
             хувьцаанаас нэг сая төгрөгтэй дүйцүүлэн 1072 ширхэг хувьцааг
             эзэмшүүлэх болсон билээ.{" "}
             <p>
-              <img src="http://elclawoffice.mn/media/elc/content/%D0%B3%D1%83%D1%80%D0%B0%D0%B2_0_22_504_338.jpg" />
+              <Image
+                alt=""
+                src="http://elclawoffice.mn/media/elc/content/%D0%B3%D1%83%D1%80%D0%B0%D0%B2_0_22_504_338.jpg"
+                width={504}
+                height={316}
+              />
             </p>
             <p>
               Монгол Улсын Засгийн газрын 2012 оны 05 дугаар сарын 30-ны өдрийн

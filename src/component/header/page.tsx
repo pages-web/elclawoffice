@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -9,8 +10,10 @@ const Header = () => {
           <div className="col-md-5">
             <div className="logo">
               <Link href="/">
-                <img
+                <Image
                   src="http://elclawoffice.mn/media/elc/content/20_web_logo_2.png"
+                  width={273}
+                  height={110}
                   alt="ELC LLP ADVOCATES"
                 />
               </Link>

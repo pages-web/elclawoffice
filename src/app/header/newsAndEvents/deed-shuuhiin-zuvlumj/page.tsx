@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -19,7 +20,12 @@ export default function page() {
 
           <div className="back-white">
             <p>
-              <img src="http://elclawoffice.mn/media/elc/content/soymbo.jpg" />
+              <Image
+                alt=""
+                src="http://elclawoffice.mn/media/elc/content/soymbo.jpg"
+                width={210}
+                height={210}
+              />
             </p>
             <p>
               <strong>МОНГОЛ УЛСЫН ДЭЭД Ш</strong>

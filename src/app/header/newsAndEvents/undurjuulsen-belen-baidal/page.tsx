@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -24,9 +25,12 @@ export default function page() {
               <tbody>
                 <tr>
                   <td>
-                    <img
+                    <Image
+                      alt=""
                       src="http://elclawoffice.mn/media/elc/content/%D0%9C%D1%8D%D0%B4%D1%8D%D1%8D/01.jpg"
                       data-image="z21mlwwwj7qp"
+                      width={544}
+                      height={565}
                     />
                     <br />
                   </td>
@@ -35,9 +39,12 @@ export default function page() {
                     &nbsp;&nbsp; <br />
                   </td>
                   <td>
-                    <img
+                    <Image
+                      alt=""
                       src="http://elclawoffice.mn/media/elc/content/%D0%9C%D1%8D%D0%B4%D1%8D%D1%8D/02.jpg"
                       data-image="j06km0wy0gse"
+                      width={544}
+                      height={565}
                     />
                     <br />
                   </td>

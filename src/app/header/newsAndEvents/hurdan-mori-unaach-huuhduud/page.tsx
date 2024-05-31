@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -30,7 +31,12 @@ export default function page() {
               өвлийн уралдаануудад нийт 12 хүүхэд амь насаа алдсан юм.
             </p>
             <p>
-              <img src="http://elclawoffice.mn/media/elc/content/37d97299b932304d4b5d5c42816915bf.jpg" />
+              <Image
+                alt=""
+                src="http://elclawoffice.mn/media/elc/content/37d97299b932304d4b5d5c42816915bf.jpg"
+                width={1090}
+                height={726}
+              />
             </p>
             <div>
               {" "}
@@ -81,7 +87,12 @@ export default function page() {
                 хэргийн судалгаагаа өргөжүүлж ажилласан.{" "}
               </p>{" "}
               <p>
-                <img src="http://elclawoffice.mn/media/elc/content/davah_hural_deer.jpg" />
+                <Image
+                  alt=""
+                  src="http://elclawoffice.mn/media/elc/content/davah_hural_deer.jpg"
+                  width={1090}
+                  height={666}
+                />
               </p>
               <p>
                 Монгол Улсын Засгийн газрын2017 оны 02-р сарын 22-ны өдрийн 63-р

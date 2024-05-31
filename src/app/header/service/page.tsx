@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -24,7 +25,7 @@ export default function page() {
     //           <li className="col-xs-12 col-md-6 other service-list text-right">
     //             <Link href="/header/service/hagas-tsagiin-huulich">
     //               <div className="img ">
-    //                 <img
+    //                 <Image
     //                   alt="Хагас цагийн хуульч"
     //                   src="http://elclawoffice.mn/media/elc/content/service_pic/17.jpg"
     //                 />

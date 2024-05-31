@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -20,7 +21,12 @@ export default function page() {
           </h2>
 
           <div className="back-white">
-            <img src="	http://elclawoffice.mn/media/elc/content/moh.png" />
+            <Image
+              alt=""
+              src="	http://elclawoffice.mn/media/elc/content/moh.png"
+              width={1090}
+              height={479}
+            />
             <div>
               <div>Импорт, экспортын лиценз олгох журам </div>
               <p>

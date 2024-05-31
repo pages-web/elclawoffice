@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -27,9 +28,11 @@ const Home = () => {
                 <div className="owl-item active" style={{ width: 1519 }}>
                   <div className="item">
                     <div className="photo">
-                      <img
+                      <Image
                         alt="ELC nuur 1 medremjtei"
                         src="http://elclawoffice.mn/media/elc/content/huudasnii_background/.-8305092180150145249_1920_x_1200.jpg"
+                        width={1920}
+                        height={1200}
                       />
                     </div>
                     <div className="overlay">
@@ -42,9 +45,11 @@ const Home = () => {
                 <div className="owl-item" style={{ width: 1519 }}>
                   <div className="item">
                     <div className="photo">
-                      <img
+                      <Image
                         alt="nuur 2 yaraltai hereg"
                         src="http://elclawoffice.mn/media/elc/content/huudasnii_background/bayar_ah_all_photo/.-8160851325438875575_1920_x_1200.JPG"
+                        width={1920}
+                        height={1200}
                       />
                     </div>
                     <div className="overlay">
@@ -56,9 +61,11 @@ const Home = () => {
                 <div className="owl-item active" style={{ width: 1519 }}>
                   <div className="item">
                     <div className="photo">
-                      <img
+                      <Image
                         alt="ELC LLP"
                         src="	http://elclawoffice.mn/media/elc/content/huudasnii_background/.-3324998811395711062_1920_x_1200.JPG"
+                        width={1920}
+                        height={1200}
                       />
                     </div>
                     <div className="overlay">
@@ -71,9 +78,11 @@ const Home = () => {
                 <div className="owl-item" style={{ width: 1519 }}>
                   <div className="item">
                     <div className="photo">
-                      <img
+                      <Image
                         alt="ELC LLP"
                         src="http://elclawoffice.mn/media/elc/content/huudasnii_background/.-1096224438272427223_1920_x_1200.JPG"
+                        width={1920}
+                        height={1200}
                       />
                     </div>
                     <div className="overlay">
@@ -85,9 +94,11 @@ const Home = () => {
                 <div className="owl-item" style={{ width: 1519 }}>
                   <div className="item">
                     <div className="photo">
-                      <img
+                      <Image
                         alt="nuur 5"
                         src="http://elclawoffice.mn/media/elc/content/huudasnii_background/.-5478828469191432365_1920_x_1200.JPG"
+                        width={1920}
+                        height={1200}
                       />
                     </div>
                     <div className="overlay">

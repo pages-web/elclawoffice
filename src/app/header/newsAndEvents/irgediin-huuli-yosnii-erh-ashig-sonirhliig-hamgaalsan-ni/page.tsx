@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -35,7 +36,12 @@ export default function page() {
               тасласан.{" "}
             </p>
             <p>
-              <img src="http://elclawoffice.mn/media/elc/content/876b5e0303422c5bd21610db68ff57e4.jpg" />
+              <Image
+                alt=""
+                src="http://elclawoffice.mn/media/elc/content/876b5e0303422c5bd21610db68ff57e4.jpg"
+                width={700}
+                height={364}
+              />
             </p>
             <p>
               Г компани нь эрх олгосноос барилга байгууламжийг ашиглалтанд өгөх
@@ -54,7 +60,12 @@ export default function page() {
               ажиллав.{" "}
             </p>{" "}
             <p>
-              <img src="http://elclawoffice.mn/media/elc/content/IMG_0867.JPG" />
+              <Image
+                alt=""
+                src="http://elclawoffice.mn/media/elc/content/IMG_0867.JPG"
+                width={1090}
+                height={817}
+              />
             </p>
             <p>
               Бид энэ хугацаанд дээр дурдсан Нийслэлийн Засаг даргын 2010 оны Г

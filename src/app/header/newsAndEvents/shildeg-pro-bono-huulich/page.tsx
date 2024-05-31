@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 export default function page() {
   return (
     <div
@@ -32,7 +32,8 @@ export default function page() {
             </p>
             <p></p>
             <figure>
-              <img
+              <Image
+                alt=""
                 src="http://elclawoffice.mn/media/elc/content/IBA-1.jpg"
                 style={{
                   width: "270px",
