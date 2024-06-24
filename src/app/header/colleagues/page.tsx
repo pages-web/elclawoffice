@@ -7,8 +7,7 @@ export default function page() {
       className="lan-mn"
       style={{
         display: "block",
-        backgroundImage:
-          'url("http://elclawoffice.mn/media/elc/content/huudasnii_background/corporate/crop9.jpg")',
+        backgroundImage: "url(/image/huudasnii_background-corporate-crop9.png)",
         backgroundSize: "cover",
         minHeight: "100vh",
       }}

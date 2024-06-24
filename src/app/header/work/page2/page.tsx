@@ -33,7 +33,7 @@ export default function Page() {
       style={{
         display: "block",
         backgroundImage:
-          'url("http://elclawoffice.mn/media/elc/content/huudasnii_background/corporate/O9VV030.jpg")',
+          "url(/image/huudasnii_background-corporate-O9VV030.png)",
         backgroundSize: "cover",
         minHeight: "100vh",
       }}

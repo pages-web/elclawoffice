@@ -8,7 +8,7 @@ export default function page() {
       style={{
         display: "block",
         backgroundImage:
-          "url(http://elclawoffice.mn/media/elc/content/huudasnii_background/corporate/shutterstock_363629945.jpg)",
+          "url(/image/huudasnii_background-corporate-shutterstock_363629945.png)",
         backgroundSize: "cover",
         minHeight: "100vh",
       }}

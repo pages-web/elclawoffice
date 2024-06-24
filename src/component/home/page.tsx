@@ -39,7 +39,7 @@ const Home = () => {
                     <div className="photo">
                       <Image
                         alt="ELC nuur 1 medremjtei"
-                        src="http://elclawoffice.mn/media/elc/content/huudasnii_background/.-8305092180150145249_1920_x_1200.jpg"
+                        src="/image/ELC-nuur-1-medremjtei.png"
                         width={1920}
                         height={1200}
                       />
@@ -56,7 +56,7 @@ const Home = () => {
                     <div className="photo">
                       <Image
                         alt="nuur 2 yaraltai hereg"
-                        src="http://elclawoffice.mn/media/elc/content/huudasnii_background/bayar_ah_all_photo/.-8160851325438875575_1920_x_1200.JPG"
+                        src="/image/nuur-2-yaraltai-hereg.png"
                         width={1920}
                         height={1200}
                       />
@@ -72,7 +72,7 @@ const Home = () => {
                     <div className="photo">
                       <Image
                         alt="ELC LLP"
-                        src="	http://elclawoffice.mn/media/elc/content/huudasnii_background/.-3324998811395711062_1920_x_1200.JPG"
+                        src="/image/ELC-LLP.png"
                         width={1920}
                         height={1200}
                       />
@@ -89,7 +89,7 @@ const Home = () => {
                     <div className="photo">
                       <Image
                         alt="ELC LLP"
-                        src="http://elclawoffice.mn/media/elc/content/huudasnii_background/.-1096224438272427223_1920_x_1200.JPG"
+                        src="/image/ELC-LPP-2.png"
                         width={1920}
                         height={1200}
                       />
@@ -105,7 +105,7 @@ const Home = () => {
                     <div className="photo">
                       <Image
                         alt="nuur 5"
-                        src="http://elclawoffice.mn/media/elc/content/huudasnii_background/.-5478828469191432365_1920_x_1200.JPG"
+                        src="/image/nuur-5.png"
                         width={1920}
                         height={1200}
                       />
@@ -128,8 +128,7 @@ const Home = () => {
       <section
         className="habout wrap"
         style={{
-          backgroundImage:
-            "url(http://elclawoffice.mn/media/elc/content/huudasnii_background/bb4.jpg)",
+          backgroundImage: "url(/image/huudasnii_background/bb4.png)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           width: "100%",
@@ -256,8 +255,7 @@ const Home = () => {
                       <div
                         className="service-item"
                         style={{
-                          backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/IPO_and_bond.jpg")',
+                          backgroundImage: "url(/image/IPO_and_bond.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -277,8 +275,7 @@ const Home = () => {
                       <div
                         className="service-item"
                         style={{
-                          backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/21.jpg")',
+                          backgroundImage: "url(/image/service_pic-21.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -298,8 +295,7 @@ const Home = () => {
                       <div
                         className="service-item"
                         style={{
-                          backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/22.jpg")',
+                          backgroundImage: "url(/image/service_pic-22.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -321,7 +317,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/Khagas_tsagiin_khuulich.jpg")',
+                            "url(/image/Khagas_tsagiin_khuulich.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -343,7 +339,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b2.jpg")',
+                            "url(/image/service_pic-new-b2..png)",
                         }}
                       >
                         <div className="item-desc">
@@ -364,7 +360,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/Sanhuugiin_huuliin_zuvluh.jpg")',
+                            "url(/image/Sanhuugiin_huuliin_zuvluh.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -385,7 +381,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/18.jpg")',
+                            "url(/image/content-service_pic-18.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -405,8 +401,7 @@ const Home = () => {
                       <div
                         className="service-item"
                         style={{
-                          backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/b10.jpg")',
+                          backgroundImage: "url(/image/service_pic-b10.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -427,7 +422,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/new4.")',
+                            "url(/image/service_pic-new-new4.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -448,7 +443,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/khudaldaanii_geree_heltsel.jpg")',
+                            "url(/image/khudaldaanii_geree_heltsel.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -468,8 +463,7 @@ const Home = () => {
                       <div
                         className="service-item"
                         style={{
-                          backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b9.jpg")',
+                          backgroundImage: "url(/image/service_pic-new-b9.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -490,7 +484,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/new5.jpg")',
+                            "url(/image/service_pic-new-new5.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -511,7 +505,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/khuuliin_etgeed_tatan_buulgah.jpg")',
+                            "url(/image/khuuliin_etgeed_tatan_buulgah.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -532,7 +526,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b8.jpg")',
+                            "url(/image/content-service_pic-new-b8.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -553,7 +547,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b11.jpg")',
+                            "url(/image/service_pic-new-b11.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -574,7 +568,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/tuluulugchiin_gazar_baiguulah.jpg")',
+                            "url(/image/tuluulugchiin_gazar_baiguulah.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -595,7 +589,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/OUiin_arbitriin_ajillagaa.jpg")',
+                            "url(/image/OUiin_arbitriin_ajillagaa.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -615,8 +609,7 @@ const Home = () => {
                       <div
                         className="service-item"
                         style={{
-                          backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b5.jpg")',
+                          backgroundImage: "url(/image/service_pic-new-b5.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -636,8 +629,7 @@ const Home = () => {
                       <div
                         className="service-item"
                         style={{
-                          backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/Tatvar.jpg")',
+                          backgroundImage: "url(/image/Tatvar.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -658,7 +650,7 @@ const Home = () => {
                         className="service-item"
                         style={{
                           backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/khuuli_togtoomjiin_tusul.jpg")',
+                            "url(/image/khuuli_togtoomjiin_tusu.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -678,8 +670,7 @@ const Home = () => {
                       <div
                         className="service-item"
                         style={{
-                          backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b4.jpg")',
+                          backgroundImage: "url(/image/service_pic-new-b4.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -699,8 +690,7 @@ const Home = () => {
                       <div
                         className="service-item"
                         style={{
-                          backgroundImage:
-                            'url("http://elclawoffice.mn/media/elc/content/service_pic/17.jpg")',
+                          backgroundImage: "url(/image/service_pic-17.png)",
                         }}
                       >
                         <div className="item-desc">
@@ -729,7 +719,7 @@ const Home = () => {
           className="color_jobs"
           style={{
             backgroundImage:
-              'url("http://elclawoffice.mn/media/elc/content/huudasnii_background/corporate/O9VV030.jpg")',
+              "url(/image/huudasnii_background/corporate/O9VV030.png)",
             backgroundRepeat: "no- repeat",
             backgroundSize: "cover",
           }}

@@ -11,7 +11,7 @@ const Header = () => {
             <div className="logo">
               <Link href="/">
                 <Image
-                  src="http://elclawoffice.mn/media/elc/content/20_web_logo_2.png"
+                  src="/image/20_web_logo_2.png"
                   width={273}
                   height={110}
                   alt="ELC LLP ADVOCATES"

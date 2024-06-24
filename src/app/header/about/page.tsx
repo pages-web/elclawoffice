@@ -9,7 +9,7 @@ export default function AboutPage() {
       style={{
         display: "block",
         backgroundImage:
-          'url("http://elclawoffice.mn/media/elc/content/huudasnii_background/corporate/shutterstock_317042522.jpg")',
+          "url(/image/huudasnii_background-corporate-shutterstock_317042522.png)",
         backgroundSize: "cover",
         minHeight: "100vh",
       }}

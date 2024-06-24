@@ -4,52 +4,12 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    // <div
-    //   id="content"
-    //   className="lan-mn"
-    //   style={{
-    //     display: "block",
-    //     backgroundImage:
-    //       'url("http://elclawoffice.mn/media/elc/content/huudasnii_background/corporate/crop7.jpg")',
-    //     backgroundSize: "cover",
-    //     minHeight: "100vh",
-    //   }}
-    // >
-    //   <section className="container">
-    //     <div className="news-list-main nw-padding-top service-catt">
-    //       <h2 className="caption-title">Үйлчилгээ</h2>
-    //       <div>
-    //         <ul className="article-list news-list nw-list">
-    //
-
-    //           <li className="col-xs-12 col-md-6 other service-list text-right">
-    //             <Link href="/header/service/hagas-tsagiin-huulich">
-    //               <div className="img ">
-    //                 <Image
-    //                   alt="Хагас цагийн хуульч"
-    //                   src="http://elclawoffice.mn/media/elc/content/service_pic/17.jpg"
-    //                 />
-    //               </div>
-    //               <div className="desc">Хагас цагийн хуульч</div>
-    //               <div className="hover-bg">
-    //                 <i className="more fa fa-link"></i>
-    //               </div>
-    //             </Link>
-    //           </li>
-    //         </ul>
-    //         <div className="clearfix"></div>
-    //       </div>
-    //     </div>
-    //   </section>
-    //   <input type="hidden" value="" id="sqqs" />
-    // </div>
     <div
       id="content"
       className="lan-mn"
       style={{
         display: "block",
-        backgroundImage:
-          'url("http://elclawoffice.mn/media/elc/content/huudasnii_background/corporate/crop7.jpg")',
+        backgroundImage: "url(/image/huudasnii_background-corporate-crop7.png)",
         backgroundSize: "cover",
         minHeight: "100vh",
       }}
