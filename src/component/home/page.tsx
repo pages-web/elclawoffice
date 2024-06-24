@@ -1,10 +1,19 @@
-import React from "react";
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import ScrollAnimationComponentSection2 from "../animate-section-2/page";
+
+import ScrollAnimationComponentSection4 from "../animate-section-4/page";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 const Home = () => {
   return (
     <div id="content" className="lan-mn index">
+      {/* start section 1 */}
+
       <section className="slider">
         <div className="position-relative">
           <div
@@ -114,6 +123,8 @@ const Home = () => {
         </div>
       </section>
 
+      {/* start section 2 */}
+
       <section
         className="habout wrap"
         style={{
@@ -126,86 +137,91 @@ const Home = () => {
         }}
       >
         <div className="habout-con">
-          <div className="container">
-            <h2
-              className="about-title aos-init aos-animate"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration={1200}
-              data-aos-anchor-placement="bottom-bottom"
-            >
-              20 жилийн туршлага
-            </h2>
-            <div className="row">
-              <div className="col-md-4">
-                <div
-                  className="about-mid aos-init aos-animate"
-                  data-aos="fade-up"
-                  data-aos-easing="linear"
-                  data-aos-duration={1500}
-                  data-aos-anchor-placement="bottom-bottom"
-                >
-                  <h2>Манай үйлчилгээ</h2>
-                  <div className="content">
-                    <p>
-                      Мэргэжлийн, итгэлтэй, ёс зүйтэй хуульчдын баг өмгөөллийн
-                      болон бүх төрлийн зөвлөх үйлчилгээг Монгол, Англи, Хятад,
-                      Орос, Герман, Солонгос, Япон хэлээр үзүүлдэг. Туршлагатай,
-                      чадварлаг хуульчдаар дамжуулан үйлчлүүлэгчийн эрх ашгийг
-                      хамгаалж, хамтын ажиллагаанд үнэ цэнийг бий болгодог.
-                    </p>
+          <ScrollAnimationComponentSection2>
+            <div className="container">
+              <h2
+                className="about-title aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration={1200}
+                data-aos-anchor-placement="bottom-bottom"
+              >
+                20 жилийн туршлага
+              </h2>
+              <div className="row">
+                <div className="col-md-4">
+                  <div
+                    className="about-mid aos-init aos-animate"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration={1500}
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <h2>Манай үйлчилгээ</h2>
+                    <div className="content">
+                      <p>
+                        Мэргэжлийн, итгэлтэй, ёс зүйтэй хуульчдын баг өмгөөллийн
+                        болон бүх төрлийн зөвлөх үйлчилгээг Монгол, Англи,
+                        Хятад, Орос, Герман, Солонгос, Япон хэлээр үзүүлдэг.
+                        Туршлагатай, чадварлаг хуульчдаар дамжуулан
+                        үйлчлүүлэгчийн эрх ашгийг хамгаалж, хамтын ажиллагаанд
+                        үнэ цэнийг бий болгодог.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-md-4">
-                <div
-                  className="about-mid aos-init aos-animate"
-                  data-aos="fade-up"
-                  data-aos-easing="linear"
-                  data-aos-duration={1600}
-                  data-aos-anchor-placement="bottom-bottom"
-                >
-                  <h2>МАНАЙ ХУУЛЬЧИД</h2>
-                  <div className="content">
-                    <p />
-                    <p>
-                      Хууль зүйн үйлчилгээний салбарт 30 гаруй жил ажилласан
-                      ахмад өмгөөлөгчид, дотоод, гадаадын шилдэг сургуулийг
-                      төгссөн чадварлаг залуу хуульчид нэг баг болон хамтран
-                      ажиллаж, харилцан хүндэтгэл, зөвшилцөлд түшиглэн
-                      ажилладаг.
-                    </p>
-                    <p />
+                <div className="col-md-4">
+                  <div
+                    className="about-mid aos-init aos-animate"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration={1600}
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <h2>МАНАЙ ХУУЛЬЧИД</h2>
+                    <div className="content">
+                      <p />
+                      <p>
+                        Хууль зүйн үйлчилгээний салбарт 30 гаруй жил ажилласан
+                        ахмад өмгөөлөгчид, дотоод, гадаадын шилдэг сургуулийг
+                        төгссөн чадварлаг залуу хуульчид нэг баг болон хамтран
+                        ажиллаж, харилцан хүндэтгэл, зөвшилцөлд түшиглэн
+                        ажилладаг.
+                      </p>
+                      <p />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-md-4">
-                <div
-                  className="about-mid aos-init aos-animate"
-                  data-aos="fade-up"
-                  data-aos-easing="linear"
-                  data-aos-duration={1700}
-                  data-aos-anchor-placement="bottom-bottom"
-                >
-                  <h2>БИД ЮУГ ЭРХЭМЛЭДЭГ ВЭ</h2>
-                  <div className="content">
-                    <p />
-                    <p>
-                      Найдвартай, мэргэжлийн үйлчилгээг үзүүлэх замаар хууль
-                      зүйн болон бизнесийн зөвлөгөө, үйлчилгээний чанар,
-                      хүртээмжийг сайжруулахыг эрхэмлэн үйлчлүүлэгчдийнхээ
-                      хэрэгцээг зөв тодорхойлон, асуудлыг цогцоор нь оновчтой
-                      шийдвэрлэх арга замыг эрэлхийлж ажиллахыг зорьдог.
-                    </p>
-                    <p />
-                    <p />
+                <div className="col-md-4">
+                  <div
+                    className="about-mid aos-init aos-animate"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration={1700}
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <h2>БИД ЮУГ ЭРХЭМЛЭДЭГ ВЭ</h2>
+                    <div className="content">
+                      <p />
+                      <p>
+                        Найдвартай, мэргэжлийн үйлчилгээг үзүүлэх замаар хууль
+                        зүйн болон бизнесийн зөвлөгөө, үйлчилгээний чанар,
+                        хүртээмжийг сайжруулахыг эрхэмлэн үйлчлүүлэгчдийнхээ
+                        хэрэгцээг зөв тодорхойлон, асуудлыг цогцоор нь оновчтой
+                        шийдвэрлэх арга замыг эрэлхийлж ажиллахыг зорьдог.
+                      </p>
+                      <p />
+                      <p />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollAnimationComponentSection2>
         </div>
       </section>
+
+      {/* start section 3  */}
 
       <section className="h-services wrap">
         <div className="service-wrap">
@@ -215,439 +231,498 @@ const Home = () => {
             style={{ opacity: 1, display: "block" }}
           >
             <div className="owl-wrapper-outer">
-              <div
-                className="owl-wrapper"
-                style={{
-                  width: "16720px",
-                  left: "0px",
-                  display: "block",
-                  transition: "all 400ms ease 0s",
-                  // transform: "translate3d(-5320px, 0px, 0px)",
+              <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 1700,
+                  disableOnInteraction: false,
                 }}
+                modules={[Autoplay]}
+                className="mySwiper"
               >
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/IPO_and_bond.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/ipo-ba-bond"
-                        className="item-title anim-3"
+                <div
+                  className="owl-wrapper"
+                  style={{
+                    width: "16720px",
+                    left: "0px",
+                    display: "block",
+                    transition: "all 400ms ease 0s",
+                    transform: "translate3d(-5320px, 0px, 0px)",
+                  }}
+                >
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/IPO_and_bond.jpg")',
+                        }}
                       >
-                        IPO ба Бонд
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/ipo-ba-bond"
+                            className="item-title anim-3"
+                          >
+                            IPO ба Бонд
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/21.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/huvitsaa-hudaldan-avah"
+                            className="item-title anim-3"
+                          >
+                            Хувьцаа худалдан авах, нэгдэх ажиллагаа
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/22.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/huuli-zuin-dun-shinjilgee"
+                            className="item-title anim-3"
+                          >
+                            Хууль зүйн дүн шинжилгээ
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/Khagas_tsagiin_khuulich.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/huuliin-etgeediin-burtgel"
+                            className="item-title anim-3"
+                          >
+                            Хуулийн этгээдийн бүртгэл
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b2.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/baraanii-temdgiin-burtgel"
+                            className="item-title anim-3"
+                          >
+                            Барааны тэмдгийн бүртгэл
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/Sanhuugiin_huuliin_zuvluh.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/sanhuugiin-huuliin-zuvluh"
+                            className="item-title anim-3"
+                          >
+                            Санхүүгийн хуулийн зөвлөх
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/18.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/oyunii-umchiin-burtgels"
+                            className="item-title anim-3"
+                          >
+                            Оюуны өмчийн бүртгэл
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/b10.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/tur-huviin-hevshliin-tunshlel"
+                            className="item-title anim-3"
+                          >
+                            Төр хувийн хэвшлийн түншлэл
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/new4.")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/companii-zasaglal"
+                            className="item-title anim-3"
+                          >
+                            Компанийн засаглал
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/khudaldaanii_geree_heltsel.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/hudaldaanii-geree-heltsel"
+                            className="item-title anim-3"
+                          >
+                            Худалдааны гэрээ хэлцэл
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b9.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/huuliin-etgeed-tatan-buulgah"
+                            className="item-title anim-3"
+                          >
+                            Хуулийн этгээд татан буулгах
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/new5.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/irgenii-hereg-margaan"
+                            className="item-title anim-3"
+                          >
+                            Иргэний хэрэг, маргаан
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/khuuliin_etgeed_tatan_buulgah.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/eruugiin-hereg-margaan"
+                            className="item-title anim-3"
+                          >
+                            Эрүүгийн хэрэг маргаан
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b8.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/zahirgaanii-hereg-margaan"
+                            className="item-title anim-3"
+                          >
+                            Захиргааны хэрэг маргаан
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item active" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b11.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/hudulmuriin-asuudal"
+                            className="item-title anim-3"
+                          >
+                            Хөдөлмөрийн асуудал
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item active" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/tuluulugchiin_gazar_baiguulah.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/tuluulugchiin-gazar-baiguulah"
+                            className="item-title anim-3"
+                          >
+                            Төлөөлөгчийн газар байгуулах
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item active" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/OUiin_arbitriin_ajillagaa.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/arbitriin-ajillagaa"
+                            className="item-title anim-3"
+                          >
+                            Арбитрын ажиллагаа
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item active" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b5.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/viz-bolon-ajillah-zuvshuurul"
+                            className="item-title anim-3"
+                          >
+                            Виз болон ажиллах зөвшөөрөл
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/Tatvar.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/tatvar"
+                            className="item-title anim-3"
+                          >
+                            Татвар
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/khuuli_togtoomjiin_tusul.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/huuli-togtoomjiin-tusul"
+                            className="item-title anim-3"
+                          >
+                            Хууль тогтоомжийн төсөл
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b4.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/tusgai-zuvshuurul"
+                            className="item-title anim-3"
+                          >
+                            Тусгай зөвшөөрөл
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </div>
+                  <div className="owl-item" style={{ width: "380px" }}>
+                    <SwiperSlide>
+                      <div
+                        className="service-item"
+                        style={{
+                          backgroundImage:
+                            'url("http://elclawoffice.mn/media/elc/content/service_pic/17.jpg")',
+                        }}
+                      >
+                        <div className="item-desc">
+                          <Link
+                            href="/header/service/hagas-tsagiin-huulich"
+                            className="item-title anim-3"
+                          >
+                            Хагас цагийн хуульч
+                            <span className="more">Дэлгэрэнгүй</span>
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
                   </div>
                 </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/21.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/huvitsaa-hudaldan-avah"
-                        className="item-title anim-3"
-                      >
-                        Хувьцаа худалдан авах, нэгдэх ажиллагаа
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/22.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/huuli-zuin-dun-shinjilgee"
-                        className="item-title anim-3"
-                      >
-                        Хууль зүйн дүн шинжилгээ
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/Khagas_tsagiin_khuulich.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/huuliin-etgeediin-burtgel"
-                        className="item-title anim-3"
-                      >
-                        Хуулийн этгээдийн бүртгэл
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b2.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/baraanii-temdgiin-burtgel"
-                        className="item-title anim-3"
-                      >
-                        Барааны тэмдгийн бүртгэл
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/Sanhuugiin_huuliin_zuvluh.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/sanhuugiin-huuliin-zuvluh"
-                        className="item-title anim-3"
-                      >
-                        Санхүүгийн хуулийн зөвлөх
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/18.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/oyunii-umchiin-burtgels"
-                        className="item-title anim-3"
-                      >
-                        Оюуны өмчийн бүртгэл
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/b10.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/tur-huviin-hevshliin-tunshlel"
-                        className="item-title anim-3"
-                      >
-                        Төр хувийн хэвшлийн түншлэл
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/new/new4.")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/companii-zasaglal"
-                        className="item-title anim-3"
-                      >
-                        Компанийн засаглал
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/khudaldaanii_geree_heltsel.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/hudaldaanii-geree-heltsel"
-                        className="item-title anim-3"
-                      >
-                        Худалдааны гэрээ хэлцэл
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b9.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/huuliin-etgeed-tatan-buulgah"
-                        className="item-title anim-3"
-                      >
-                        Хуулийн этгээд татан буулгах
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/new/new5.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/irgenii-hereg-margaan"
-                        className="item-title anim-3"
-                      >
-                        Иргэний хэрэг, маргаан
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/khuuliin_etgeed_tatan_buulgah.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/eruugiin-hereg-margaan"
-                        className="item-title anim-3"
-                      >
-                        Эрүүгийн хэрэг маргаан
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b8.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/zahirgaanii-hereg-margaan"
-                        className="item-title anim-3"
-                      >
-                        Захиргааны хэрэг маргаан
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item active" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b11.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/hudulmuriin-asuudal"
-                        className="item-title anim-3"
-                      >
-                        Хөдөлмөрийн асуудал
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item active" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/tuluulugchiin_gazar_baiguulah.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/tuluulugchiin-gazar-baiguulah"
-                        className="item-title anim-3"
-                      >
-                        Төлөөлөгчийн газар байгуулах
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item active" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/OUiin_arbitriin_ajillagaa.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/arbitriin-ajillagaa"
-                        className="item-title anim-3"
-                      >
-                        Арбитрын ажиллагаа
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item active" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b5.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/viz-bolon-ajillah-zuvshuurul"
-                        className="item-title anim-3"
-                      >
-                        Виз болон ажиллах зөвшөөрөл
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/Tatvar.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/tatvar"
-                        className="item-title anim-3"
-                      >
-                        Татвар
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/khuuli_togtoomjiin_tusul.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/huuli-togtoomjiin-tusul"
-                        className="item-title anim-3"
-                      >
-                        Хууль тогтоомжийн төсөл
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/new/b4.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/tusgai-zuvshuurul"
-                        className="item-title anim-3"
-                      >
-                        Тусгай зөвшөөрөл
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-                <div className="owl-item" style={{ width: "380px" }}>
-                  <div
-                    className="service-item"
-                    style={{
-                      backgroundImage:
-                        'url("http://elclawoffice.mn/media/elc/content/service_pic/17.jpg")',
-                    }}
-                  >
-                    <div className="item-desc">
-                      <Link
-                        href="/header/service/hagas-tsagiin-huulich"
-                        className="item-title anim-3"
-                      >
-                        Хагас цагийн хуульч
-                        <span className="more">Дэлгэрэнгүй</span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </Swiper>
             </div>
           </div>
         </div>
       </section>
+
+      {/* start section 4 */}
 
       <section className="ab-serv">
         <div
@@ -671,193 +746,197 @@ const Home = () => {
                       transform: "translate3d(0px, -585px, 0px)",
                     }}
                   >
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/honkong-iin-hurungiin-birjid-bond-gargah">
-                          Хонг Конгийн Хөрөнгийн Биржид Бонд гаргах ажил
-                          (2010-2014)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/zasgiin-gazriin-esreg-arbitriin-margaan">
-                          Монгол Улсын Засгийн Газрын эсрэг арбитрын маргаан
-                          (2012 оны 10-р сар)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/baraanii-temdgiin-burtgeliin-ajil">
-                          Барааны тэмдгийн бүртгэлийн ажил (2008-2019)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/avstraliin-hurungiin-birj-deer-ipo-gargah">
-                          Австралийн хөрөнгийн бирж дээр IPO гаргах ажил (2013
-                          оны 7 сар)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/daatgaliin-companiudiig-negtgeh-ajil">
-                          Даатгалын компаниудыг нэгтгэх ажил (2012 оны 9-р сар)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/kontsessiin-gereetei-holbootoi-ajillagaa">
-                          Концессын гэрээтэй холбогдох ажиллагаа (2016-2018 он
-                          хүртэл)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/tatvariin-ur-dagavariin-talaar">
-                          Татварын үр дагаварын талаар хууль зүйн дүгнэлт
-                          боловсруулсан (2018)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/smbc">
-                          SMBC-ийн төлөөлөгчийн газрыг үүсгэн байгуулах ажил
-                          (2013 оны 10-р сар)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide swiper-slide-prev"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/alban-yosnii-distribyuter-baguulah">
-                          Албан ёсны дистрибьютер байгуулах ажил (2017 оны 12-р
-                          сар)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide swiper-slide-active"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/zahirgaanii-aktuudiig-huchingui-bolgoson">
-                          Захиргааны ﻿актуудыг хүчингүй болгож шийдвэрлүүлсэн
-                          (2014-2015)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide swiper-slide-next"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/tatvariin-huuliar-erh-zuin-zuvluguu-uguh">
-                          Татварын хуулиар эрх зүйн зөвлөгөө өгөх ажиллагаа
-                          (2016-2017)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/mongoliin-hurungiin-birj-deer-ipo-gargah">
-                          Монголын хөрөнгийн бирж дээр IPO гаргах ажил (2018 оны
-                          9 сар)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/singapuriin-hurungiin-birjid-bond-burtguuleh">
-                          Сингапурын Хөрөнгийн Биржид бонд бүртгүүлэх ажил (2019
-                          оны 4-р сар)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/toronto-mongoliin-hurungiig-birj-davhar-burtgel">
-                          Торонтогийн Хөрөнгийн Бирж, Монголын Хөрөнгийн Бирж
-                          дээрх давхар бүртгэл (2018 оны 6-р сар) ﻿
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/bolovsrol-surgaltiin-baiguullagad-zuvluh-burtguuleh">
-                          Боловсрол сургалтын байгууллагуудад зөвлөх, бүртгүүлэх
-                          ажиллагаа (2015-2019)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/heder/work/tusgai-zuvshuuruld-huuli-zuin-shinjilgee-hiih">
-                          Тусгай зөвшөөрөлд хууль зүйн дүн шинжилгээ хийх
-                          ажиллагаа (2015)
-                        </a>
-                      </h3>
-                    </div>
-                    <div
-                      className="swiper-slide"
-                      style={{ height: 40, marginBottom: 25 }}
-                    >
-                      <h3>
-                        <a href="/header/work/torontogiin-hurungiin-birj-deer-ipo-gargah">
-                          Торонтогийн хөрөнгийн бирж дээр IPO гаргах ажил (2018
-                          оны 5-р сар)
-                        </a>
-                      </h3>
-                    </div>
+                    <ScrollAnimationComponentSection4>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/honkong-iin-hurungiin-birjid-bond-gargah">
+                            Хонг Конгийн Хөрөнгийн Биржид Бонд гаргах ажил
+                            (2010-2014)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/zasgiin-gazriin-esreg-arbitriin-margaan">
+                            Монгол Улсын Засгийн Газрын эсрэг арбитрын маргаан
+                            (2012 оны 10-р сар)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/baraanii-temdgiin-burtgeliin-ajil">
+                            Барааны тэмдгийн бүртгэлийн ажил (2008-2019)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/avstraliin-hurungiin-birj-deer-ipo-gargah">
+                            Австралийн хөрөнгийн бирж дээр IPO гаргах ажил (2013
+                            оны 7 сар)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/daatgaliin-companiudiig-negtgeh-ajil">
+                            Даатгалын компаниудыг нэгтгэх ажил (2012 оны 9-р
+                            сар)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/kontsessiin-gereetei-holbootoi-ajillagaa">
+                            Концессын гэрээтэй холбогдох ажиллагаа (2016-2018 он
+                            хүртэл)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/tatvariin-ur-dagavariin-talaar">
+                            Татварын үр дагаварын талаар хууль зүйн дүгнэлт
+                            боловсруулсан (2018)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/smbc">
+                            SMBC-ийн төлөөлөгчийн газрыг үүсгэн байгуулах ажил
+                            (2013 оны 10-р сар)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide swiper-slide-prev"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/alban-yosnii-distribyuter-baguulah">
+                            Албан ёсны дистрибьютер байгуулах ажил (2017 оны
+                            12-р сар)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide swiper-slide-active"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/zahirgaanii-aktuudiig-huchingui-bolgoson">
+                            Захиргааны ﻿актуудыг хүчингүй болгож шийдвэрлүүлсэн
+                            (2014-2015)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide swiper-slide-next"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/tatvariin-huuliar-erh-zuin-zuvluguu-uguh">
+                            Татварын хуулиар эрх зүйн зөвлөгөө өгөх ажиллагаа
+                            (2016-2017)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/mongoliin-hurungiin-birj-deer-ipo-gargah">
+                            Монголын хөрөнгийн бирж дээр IPO гаргах ажил (2018
+                            оны 9 сар)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/singapuriin-hurungiin-birjid-bond-burtguuleh">
+                            Сингапурын Хөрөнгийн Биржид бонд бүртгүүлэх ажил
+                            (2019 оны 4-р сар)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/toronto-mongoliin-hurungiig-birj-davhar-burtgel">
+                            Торонтогийн Хөрөнгийн Бирж, Монголын Хөрөнгийн Бирж
+                            дээрх давхар бүртгэл (2018 оны 6-р сар) ﻿
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/bolovsrol-surgaltiin-baiguullagad-zuvluh-burtguuleh">
+                            Боловсрол сургалтын байгууллагуудад зөвлөх,
+                            бүртгүүлэх ажиллагаа (2015-2019)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/heder/work/tusgai-zuvshuuruld-huuli-zuin-shinjilgee-hiih">
+                            Тусгай зөвшөөрөлд хууль зүйн дүн шинжилгээ хийх
+                            ажиллагаа (2015)
+                          </Link>
+                        </h3>
+                      </div>
+                      <div
+                        className="swiper-slide"
+                        style={{ height: 40, marginBottom: 25 }}
+                      >
+                        <h3>
+                          <Link href="/header/work/torontogiin-hurungiin-birj-deer-ipo-gargah">
+                            Торонтогийн хөрөнгийн бирж дээр IPO гаргах ажил
+                            (2018 оны 5-р сар)
+                          </Link>
+                        </h3>
+                      </div>
+                    </ScrollAnimationComponentSection4>
                   </div>
                   {/* Add Pagination */}
+
                   <div className="swiper-pagination" />
                   <span
                     className="swiper-notification"

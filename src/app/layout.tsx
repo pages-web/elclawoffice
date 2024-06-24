@@ -19,6 +19,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha384-nvCwYAPnROuFhV6aP5lv3RD7Ih+CH0S8iMnDfaPQzK1FU9OrA6sOFei2iY7aKGRg"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha384-Mh+JOkl/mppz0t1XBwAaHePhLsmBZo6EVH5p9H8R/P2Epbp10dL1/Rnbdp6oaxw5"
+          crossOrigin="anonymous"
+        /> */}
+
         <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
 
         <link rel="stylesheet" href="/static/css/reset.css" />
@@ -50,6 +63,12 @@ export default function RootLayout({
         {children}
         <Footer />
 
+        {/* <script
+          src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/8Bp5x1yog60v8/J58XaIrIxF9/qlv5A5mf7U8N"
+          crossOrigin="anonymous"
+        /> */}
+
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" />
         <script src="https://code.jquery.com/jquery-1.9.3.min.js" />
 
@@ -58,8 +77,7 @@ export default function RootLayout({
         <script src="static/js/jquery.matchHeight-min.js" async />
         <script src="static/js/scripts.js" async />
         <script src="static/js/custom.js" async />
-        <script src="static/swiper/swiper.min.js" />
-        {/* <script src="static/assets/main.js" /> */}
+        {/* <script src="static/swiper/swiper.min.js" /> */}
       </body>
     </html>
   );

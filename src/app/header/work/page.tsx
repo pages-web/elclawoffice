@@ -3,14 +3,63 @@
 import React from "react";
 import Link from "next/link";
 import { useState } from "react";
-import { Modal, Button } from "react-bootstrap";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import Modal from "@mui/material/Modal";
+import { Box, Button, Typography } from "@mui/material";
 
 export default function page() {
-  const [showModal145, setShowModal145] = useState(false);
+  const [modal132, setModal132] = useState(false);
+  const [modal133, setModal133] = useState(false);
+  const [modal134, setModal134] = useState(false);
+  const [modal135, setModal135] = useState(false);
+  const [modal136, setModal136] = useState(false);
+  const [modal137, setModal137] = useState(false);
+  const [modal138, setModal138] = useState(false);
+  const [modal139, setModal139] = useState(false);
+  const [modal141, setModal141] = useState(false);
+  const [modal142, setModal142] = useState(false);
+  const [modal143, setModal143] = useState(false);
+  const [modal144, setModal144] = useState(false);
+  const [modal145, setModal145] = useState(false);
+  const [modal45, setModal45] = useState(false);
+  const [modal47, setModal47] = useState(false);
+  const [modal48, setModal48] = useState(false);
+  const [modal49, setModal49] = useState(false);
 
-  const handleClose145 = () => setShowModal145(false);
-  const handleShow145 = () => setShowModal145(true);
+  const handleOpen145 = () => setModal145(true);
+  const handleClose145 = () => setModal145(false);
+
+  const handleOpen143 = () => setModal143(true);
+  const handleClose143 = () => setModal143(false);
+
+  const handleOpen144 = () => setModal144(true);
+  const handleClose144 = () => setModal144(false);
+
+  const handleOpen141 = () => setModal141(true);
+  const handleClose141 = () => setModal141(false);
+
+  const handleOpen142 = () => setModal142(true);
+  const handleClose142 = () => setModal142(false);
+
+  const handleOpen139 = () => setModal139(true);
+  const handleClose139 = () => setModal139(false);
+
+  const handleOpen138 = () => setModal138(true);
+  const handleClose138 = () => setModal138(false);
+
+  const handleOpen137 = () => setModal137(true);
+  const handleClose137 = () => setModal137(false);
+
+  const handleOpen136 = () => setModal136(true);
+  const handleClose136 = () => setModal136(false);
+
+  const handleOpen134 = () => setModal134(true);
+  const handleClose134 = () => setModal134(false);
+
+  const handleOpen135 = () => setModal135(true);
+  const handleClose135 = () => setModal135(false);
+
+  const handleOpen132 = () => setModal132(true);
+  const handleClose132 = () => setModal132(false);
 
   return (
     <div
@@ -34,16 +83,11 @@ export default function page() {
               <li className="col-md-4">
                 <div
                   className="item back-white"
-                  onClick={handleShow145}
+                  onClick={handleOpen145}
                   style={{ cursor: "pointer", minHeight: 416 }}
                   data-toggle="modal"
                   data-target="#myModal145"
                 >
-                  {/* <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal145"
-                  > */}
                   <h2>
                     Хонг Конгийн Хөрөнгийн Биржид Бонд гаргах ажил (2010-2014)
                   </h2>
@@ -59,291 +103,264 @@ export default function page() {
                       зүйн дүн шинжилгээ хийж хамтран ажилласан.{" "}
                     </p>
                   </div>
-                  {/* </Link> */}
                 </div>
               </li>
               <li className="col-md-4">
-                <div className="item back-white" style={{ minHeight: 416 }}>
-                  <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal143"
-                  >
-                    <h2>
-                      Монгол Улсын Засгийн Газрын эсрэг арбитрын маргаан (2012
-                      оны 10-р сар)
-                    </h2>
-                    <span className="line" />
-                    <div className="desc">
-                      <p>
-                        Хан Ресурс ИНК, Хан Ресурс Би Ви болон Төв Азийн Уран
-                        Холдинг Компани Эл Ти Ди нарын нэхэмжлэлтэй Монгол Улсын
-                        Засгийн газарт холбогдох арбитрын хэрэгт тус тус
-                        Шинжээчийн дүгнэлт гаргасан.
-                      </p>
-                    </div>
-                  </Link>
+                <div
+                  className="item back-white"
+                  style={{ minHeight: 416, cursor: "pointer" }}
+                  onClick={handleOpen143}
+                >
+                  <h2>
+                    Монгол Улсын Засгийн Газрын эсрэг арбитрын маргаан (2012 оны
+                    10-р сар)
+                  </h2>
+                  <span className="line" />
+                  <div className="desc">
+                    <p>
+                      Хан Ресурс ИНК, Хан Ресурс Би Ви болон Төв Азийн Уран
+                      Холдинг Компани Эл Ти Ди нарын нэхэмжлэлтэй Монгол Улсын
+                      Засгийн газарт холбогдох арбитрын хэрэгт тус тус
+                      Шинжээчийн дүгнэлт гаргасан.
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="col-md-4">
-                <div className="item back-white" style={{ minHeight: 416 }}>
-                  <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal144"
-                  >
-                    <h2>Барааны тэмдгийн бүртгэлийн ажил (2008-2019)</h2>
-                    <span className="line" />
-                    <div className="desc">
-                      <p />
-                      <p>
-                        “GRANDKHAAN” (олон улсын бүртгэл), “CENTRAL TOWER”,
-                        “MexiKhan”, “CODE Pâtisserie &amp; Plus”, “ХООЛОНДОО”,
-                        “Mongolian academy of law”, “УБ СОНГДО ЭМНЭЛЭГ”,
-                        “МонГени”, “MODERN NOMADS”, “NOMAD LEGENDS”, “Double
-                        Shot”, “CROCUS Event Hall”, “Silk Road Bazaar”,
-                        “TRANSWEST MONGOLIA”, “ҮЗЭЛ БОДЛЫН ЗӨРӨГ”, “Coffee with
-                        Sugar”, “CHEESE REPUBLIC”, “Био Иод – Урт насал Удаан
-                        жарга”, “VANSEMBERUU”, “KOMATSU”, “Bulgogi Brothers”
-                        зэрэг барааны тэмдгийг тус тус бүртгүүлсэн.
-                      </p>
-                      <p />
-                      <p />
-                    </div>
-                  </Link>
+                <div
+                  className="item back-white"
+                  style={{ minHeight: 416, cursor: "pointer" }}
+                  onClick={handleOpen144}
+                >
+                  <h2>Барааны тэмдгийн бүртгэлийн ажил (2008-2019)</h2>
+                  <span className="line" />
+                  <div className="desc">
+                    <p />
+                    <p>
+                      “GRANDKHAAN” (олон улсын бүртгэл), “CENTRAL TOWER”,
+                      “MexiKhan”, “CODE Pâtisserie &amp; Plus”, “ХООЛОНДОО”,
+                      “Mongolian academy of law”, “УБ СОНГДО ЭМНЭЛЭГ”,
+                      “МонГени”, “MODERN NOMADS”, “NOMAD LEGENDS”, “Double
+                      Shot”, “CROCUS Event Hall”, “Silk Road Bazaar”, “TRANSWEST
+                      MONGOLIA”, “ҮЗЭЛ БОДЛЫН ЗӨРӨГ”, “Coffee with Sugar”,
+                      “CHEESE REPUBLIC”, “Био Иод – Урт насал Удаан жарга”,
+                      “VANSEMBERUU”, “KOMATSU”, “Bulgogi Brothers” зэрэг барааны
+                      тэмдгийг тус тус бүртгүүлсэн.
+                    </p>
+                    <p />
+                    <p />
+                  </div>
                 </div>
               </li>
               <li className="col-md-4">
-                <div className="item back-white" style={{ minHeight: 320 }}>
-                  <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal141"
-                  >
-                    <h2>
-                      Австралийн хөрөнгийн бирж дээр IPO гаргах ажил (2013 оны 7
-                      сар)
-                    </h2>
-                    <span className="line" />
-                    <div className="desc">
-                      <p>
-                        Харанга Ресурс компанийг Австралийн Хөрөнгийн Бирж дээр
-                        анхдагч хувьцаагаа амжилттай гаргахад эрх зүйн дүн
-                        шинжилгээ хийж, дотоодын хуулийн зөвлөхөөр ажилласан.
-                      </p>
-                    </div>
-                  </Link>
+                <div
+                  className="item back-white"
+                  style={{ minHeight: 320, cursor: "pointer" }}
+                  onClick={handleOpen141}
+                >
+                  <h2>
+                    Австралийн хөрөнгийн бирж дээр IPO гаргах ажил (2013 оны 7
+                    сар)
+                  </h2>
+                  <span className="line" />
+                  <div className="desc">
+                    <p>
+                      Харанга Ресурс компанийг Австралийн Хөрөнгийн Бирж дээр
+                      анхдагч хувьцаагаа амжилттай гаргахад эрх зүйн дүн
+                      шинжилгээ хийж, дотоодын хуулийн зөвлөхөөр ажилласан.
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="col-md-4">
-                <div className="item back-white" style={{ minHeight: 320 }}>
-                  <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal142"
-                  >
-                    <h2>
-                      Даатгалын компаниудыг нэгтгэх ажил (2012 оны 9-р сар)
-                    </h2>
-                    <span className="line" />
-                    <div className="desc">
-                      <p>
-                        2011 оны 1 дүгээр улиралд Ард Даатгал болон Гранд
-                        Даатгалын хувь нийлүүлэгчид тус компаниудыг нэгтгэх
-                        шийдвэрийг гаргаснаар Монголын даатгалын зах зээл дээр
-                        бий болсон даатгалын компаниудын&nbsp;анхны нэгдэл болж,
-                        өрсөлдөөны зөв орчин бүрдүүлэх олон зөв хандлага,
-                        жишгийг зах зээлд бий болгосон билээ.
-                      </p>
-                    </div>
-                  </Link>
+                <div
+                  className="item back-white"
+                  style={{ minHeight: 320, cursor: "pointer" }}
+                  onClick={handleOpen142}
+                >
+                  <h2>Даатгалын компаниудыг нэгтгэх ажил (2012 оны 9-р сар)</h2>
+                  <span className="line" />
+                  <div className="desc">
+                    <p>
+                      2011 оны 1 дүгээр улиралд Ард Даатгал болон Гранд
+                      Даатгалын хувь нийлүүлэгчид тус компаниудыг нэгтгэх
+                      шийдвэрийг гаргаснаар Монголын даатгалын зах зээл дээр бий
+                      болсон даатгалын компаниудын&nbsp;анхны нэгдэл болж,
+                      өрсөлдөөны зөв орчин бүрдүүлэх олон зөв хандлага, жишгийг
+                      зах зээлд бий болгосон билээ.
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="col-md-4">
-                <div className="item back-white" style={{ minHeight: 320 }}>
-                  <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal139"
-                  >
-                    <h2>
-                      Концессын гэрээтэй холбогдох ажиллагаа (2016-2018 он
-                      хүртэл)
-                    </h2>
-                    <span className="line" />
-                    <div className="desc">
-                      <p>
-                        Өмнийн говьд нийт 110км өндөр хүчдэлийн дамжуулах шугам
-                        барих 110 сая ам.долларын үнийн дүн бүхий концессын
-                        гэрээг байгууллахад зөвлөж, улмаар уг гэрээний дагуу
-                        үйлчлүүлэгчийн эрх ашгийг амжилттай хамгаалж 53 тэрбум
-                        төгрөгний төлбөрийг шүүхээр нэхэмжилж хариуцагчаас
-                        гаргуулсан.{" "}
-                      </p>
-                    </div>
-                  </Link>
+                <div
+                  className="item back-white"
+                  style={{ minHeight: 320, cursor: "pointer" }}
+                  onClick={handleOpen139}
+                >
+                  <h2>
+                    Концессын гэрээтэй холбогдох ажиллагаа (2016-2018 он хүртэл)
+                  </h2>
+                  <span className="line" />
+                  <div className="desc">
+                    <p>
+                      Өмнийн говьд нийт 110км өндөр хүчдэлийн дамжуулах шугам
+                      барих 110 сая ам.долларын үнийн дүн бүхий концессын гэрээг
+                      байгууллахад зөвлөж, улмаар уг гэрээний дагуу
+                      үйлчлүүлэгчийн эрх ашгийг амжилттай хамгаалж 53 тэрбум
+                      төгрөгний төлбөрийг шүүхээр нэхэмжилж хариуцагчаас
+                      гаргуулсан.{" "}
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="col-md-4">
-                <div className="item back-white" style={{ minHeight: 320 }}>
-                  <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal138"
-                  >
-                    <h2>
-                      Татварын үр дагаварын талаар хууль зүйн дүгнэлт
-                      боловсруулсан (2018)
-                    </h2>
-                    <span className="line" />
-                    <div className="desc">
-                      <p>
-                        “У” ХНН болон ОХУ-ын “Э” ХК нарын хооронд байгуулсан
-                        гэрээний хэрэгжилт, компани эсхүл төлөөний газар
-                        байгуулах, эсхүл гэрээний үүргийг гуравдагч этгээдэд
-                        шилжүүлэх асуудал, эдгээр байгууллагыг бүртгүүлэх журам,
-                        холбогдох татварын үр дагаварын талаар хууль зүйн
-                        дүгнэлт боловсруулсан (2018);
-                      </p>
-                    </div>
-                  </Link>
+                <div
+                  className="item back-white"
+                  style={{ minHeight: 320, cursor: "pointer" }}
+                  onClick={handleOpen138}
+                >
+                  <h2>
+                    Татварын үр дагаварын талаар хууль зүйн дүгнэлт
+                    боловсруулсан (2018)
+                  </h2>
+                  <span className="line" />
+                  <div className="desc">
+                    <p>
+                      “У” ХНН болон ОХУ-ын “Э” ХК нарын хооронд байгуулсан
+                      гэрээний хэрэгжилт, компани эсхүл төлөөний газар
+                      байгуулах, эсхүл гэрээний үүргийг гуравдагч этгээдэд
+                      шилжүүлэх асуудал, эдгээр байгууллагыг бүртгүүлэх журам,
+                      холбогдох татварын үр дагаварын талаар хууль зүйн дүгнэлт
+                      боловсруулсан (2018);
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="col-md-4">
-                <div className="item back-white" style={{ minHeight: 320 }}>
-                  <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal137"
-                  >
-                    <h2>
-                      SMBC-ийн төлөөлөгчийн газрыг үүсгэн байгуулах ажил (2013
-                      оны 10-р сар)
-                    </h2>
-                    <span className="line" />
-                    <div className="desc">
-                      <p>
-                        SMBC банкны хувьд 2001 онд Япон улсын томоохон хоёр
-                        банкийг нэгтгэн байгуулсан бөгөөд 20 гаруй улсад өөрийн
-                        салбар, төлөөлөгчийн газрыг нээн, үйл ажиллагаагаа
-                        явуулж байгаа дэлхийн хэмжээний 20 том банкны нэг юм.{" "}
-                        <br />
-                      </p>
-                    </div>
-                  </Link>
+                <div
+                  className="item back-white"
+                  style={{ minHeight: 320, cursor: "pointer" }}
+                  onClick={handleOpen137}
+                >
+                  <h2>
+                    SMBC-ийн төлөөлөгчийн газрыг үүсгэн байгуулах ажил (2013 оны
+                    10-р сар)
+                  </h2>
+                  <span className="line" />
+                  <div className="desc">
+                    <p>
+                      SMBC банкны хувьд 2001 онд Япон улсын томоохон хоёр
+                      банкийг нэгтгэн байгуулсан бөгөөд 20 гаруй улсад өөрийн
+                      салбар, төлөөлөгчийн газрыг нээн, үйл ажиллагаагаа явуулж
+                      байгаа дэлхийн хэмжээний 20 том банкны нэг юм. <br />
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="col-md-4">
-                <div className="item back-white" style={{ minHeight: 320 }}>
-                  <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal136"
-                  >
-                    <h2>
-                      Албан ёсны дистрибьютер байгуулах ажил (2017 оны 12-р сар)
-                    </h2>
-                    <span className="line" />
-                    <div className="desc">
-                      <p>
-                        Тоёота ХХК-ийн Монгол дахь дистрибьютер болох Тоёота
-                        Сэйлс Монголиа ХХК-д хууль зүйн зөвлөх үйлчилгээ
-                        үзүүлсэн.{" "}
-                      </p>
-                      <p>
-                        ТОЁОТА СЭЙЛС МОНГОЛИА ХХК нь 2017 оны 12-р сард үүсгэн
-                        байгуулагдсан бөгөөд 2018 оны 1-р сараас албан ёсоор үйл
-                        ажиллагаагаа эхлүүлсэн. <br />
-                      </p>
-                    </div>
-                  </Link>
+                <div
+                  className="item back-white"
+                  style={{ minHeight: 320, cursor: "pointer" }}
+                  onClick={handleOpen136}
+                >
+                  <h2>
+                    Албан ёсны дистрибьютер байгуулах ажил (2017 оны 12-р сар)
+                  </h2>
+                  <span className="line" />
+                  <div className="desc">
+                    <p>
+                      Тоёота ХХК-ийн Монгол дахь дистрибьютер болох Тоёота Сэйлс
+                      Монголиа ХХК-д хууль зүйн зөвлөх үйлчилгээ үзүүлсэн.{" "}
+                    </p>
+                    <p>
+                      ТОЁОТА СЭЙЛС МОНГОЛИА ХХК нь 2017 оны 12-р сард үүсгэн
+                      байгуулагдсан бөгөөд 2018 оны 1-р сараас албан ёсоор үйл
+                      ажиллагаагаа эхлүүлсэн. <br />
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="col-md-4">
-                <div className="item back-white" style={{ minHeight: 296 }}>
-                  <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal134"
-                  >
-                    <h2>
-                      Захиргааны ﻿актуудыг хүчингүй болгож шийдвэрлүүлсэн
-                      (2014-2015)
-                    </h2>
-                    <span className="line" />
-                    <div className="desc">
-                      <p>
-                        “И” ХХК-ийн нэхэмжлэлтэй Аж үйлдвэрийн яам, Боловсрол
-                        соёл шинжлэх ухааны яаманд холбогдох захиргааны хэрэг
-                        хянан шийдвэрлэх ажиллагаанд нэхэмжлэгчийг төлөөлөн
-                        оролцож, хариуцагч нарын гаргасан захиргааны актуудыг
-                        хүчингүй болгож шийдвэрлүүлсэн (2014-2015);
-                      </p>
-                    </div>
-                  </Link>
+                <div
+                  className="item back-white"
+                  style={{ minHeight: 296, cursor: "pointer" }}
+                  onClick={handleOpen134}
+                >
+                  <h2>
+                    Захиргааны ﻿актуудыг хүчингүй болгож шийдвэрлүүлсэн
+                    (2014-2015)
+                  </h2>
+                  <span className="line" />
+                  <div className="desc">
+                    <p>
+                      “И” ХХК-ийн нэхэмжлэлтэй Аж үйлдвэрийн яам, Боловсрол соёл
+                      шинжлэх ухааны яаманд холбогдох захиргааны хэрэг хянан
+                      шийдвэрлэх ажиллагаанд нэхэмжлэгчийг төлөөлөн оролцож,
+                      хариуцагч нарын гаргасан захиргааны актуудыг хүчингүй
+                      болгож шийдвэрлүүлсэн (2014-2015);
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="col-md-4">
-                <div className="item back-white" style={{ minHeight: 296 }}>
-                  <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal135"
-                  >
-                    <h2>
-                      Татварын хуулиар эрх зүйн зөвлөгөө өгөх ажиллагаа
-                      (2016-2017)
-                    </h2>
-                    <span className="line" />
-                    <div className="desc">
-                      <p>
-                        Мастер Групп ХХК-ийн гүйцэтгэж байгаа барилгын төслүүдэд
-                        татварын хууль тогтоомжийн хэрэглээний талаар хууль зүйн
-                        зөвлөх үйлчилгээг үзүүлэн ажиллаж байна. (2016-2017)
-                      </p>
-                    </div>
-                  </Link>
+                <div
+                  className="item back-white"
+                  style={{ minHeight: 296, cursor: "pointer" }}
+                  onClick={handleOpen135}
+                >
+                  <h2>
+                    Татварын хуулиар эрх зүйн зөвлөгөө өгөх ажиллагаа
+                    (2016-2017)
+                  </h2>
+                  <span className="line" />
+                  <div className="desc">
+                    <p>
+                      Мастер Групп ХХК-ийн гүйцэтгэж байгаа барилгын төслүүдэд
+                      татварын хууль тогтоомжийн хэрэглээний талаар хууль зүйн
+                      зөвлөх үйлчилгээг үзүүлэн ажиллаж байна. (2016-2017)
+                    </p>
+                  </div>
                 </div>
               </li>
               <li className="col-md-4">
-                <div className="item back-white" style={{ minHeight: 296 }}>
-                  <Link
-                    href="javascript:void(0)"
-                    data-toggle="modal"
-                    data-target="#myModal132"
-                  >
-                    <h2>
-                      Монголын хөрөнгийн бирж дээр IPO гаргах ажил (2018 оны 9
-                      сар)
-                    </h2>
-                    <span className="line" />
-                    <div className="desc">
-                      <p>
-                        Ард Даатгал ХХК болон Ард Кредит ХХК нь анх удаа үнэт
-                        цаасаа нийтэд санал болгож, хувьцаагаа анхдагч болон
-                        хоёрдогч зах зээлд арилжаалах, шаардлагатай хөрөнгийг
-                        төвлөрүүлэх ажиллагаанд тус тус Хууль зүйн дүн шинжилгээ
-                        хийсэн.
-                      </p>
-                    </div>
-                  </Link>
+                <div
+                  className="item back-white"
+                  style={{ minHeight: 296, cursor: "pointer" }}
+                  onClick={handleOpen132}
+                >
+                  <h2>
+                    Монголын хөрөнгийн бирж дээр IPO гаргах ажил (2018 оны 9
+                    сар)
+                  </h2>
+                  <span className="line" />
+                  <div className="desc">
+                    <p>
+                      Ард Даатгал ХХК болон Ард Кредит ХХК нь анх удаа үнэт
+                      цаасаа нийтэд санал болгож, хувьцаагаа анхдагч болон
+                      хоёрдогч зах зээлд арилжаалах, шаардлагатай хөрөнгийг
+                      төвлөрүүлэх ажиллагаанд тус тус Хууль зүйн дүн шинжилгээ
+                      хийсэн.
+                    </p>
+                  </div>
                 </div>
               </li>
             </ul>
             <div className="clearfix" />
+
             <div className="pagination">
               <ul>
                 <li>
-                  <span> &lt; </span>
+                  <Link href="/header/work"> &lt;</Link>
                 </li>
                 <li className="active">
-                  <span>1</span>
+                  <Link href="/header/work">1</Link>
                 </li>
                 <li>
-                  <Link href="?page=2&_=1716985968828">2</Link>
+                  <Link href="/header/work/page2">2</Link>
                 </li>
                 <li>
-                  <Link href="?page=2&_=1716985968828"> &gt; </Link>
+                  <Link href="/header/work/page2"> &gt; </Link>
                 </li>
               </ul>
             </div>
@@ -356,34 +373,58 @@ export default function page() {
         id="sqqs"
       />
       {/* Modal */}
-      <Modal id="myModal145" show={showModal145} onHide={handleClose145}>
-        <Modal.Body>
-          <Modal.Header closeButton>
-            <Modal.Title>
-              Хонг Конгийн Хөрөнгийн Биржид Бонд гаргах ажил (2010-2014)
-            </Modal.Title>
-          </Modal.Header>
-          <p>
-            Монголиан Майнинг Корпорацийн дотоодын зөвлөхөөр ажиллаж,&nbsp;700
-            сая ам.долларын IPO болон 600 сая ам.долларын Бондыг Хонконгын
-            хөрөнгийн бирж дээр 2010 онд анхдагч хувьцаа, 2012 он болон 2014 онд
-            өрийн бичиг шинээр гаргаж, хөрөнгө босгох ажиллагаанд тус тус
-            оролоцож, эрх зүйн дүн шинжилгээ хийж хамтран ажилласан.
-          </p>
-        </Modal.Body>
 
-        <Modal.Footer>
-          {/* <Button variant="secondary" onClick={handleClose145}>
-            Close
-          </Button> */}
-        </Modal.Footer>
+      <Modal
+        open={modal145}
+        onClose={handleClose145}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose145}
+            >
+              ×
+            </button>
+            <div className="modal-body">
+              <h2>
+                Хонг Конгийн Хөрөнгийн Биржид Бонд гаргах ажил (2010-2014)
+              </h2>
+              <div className="wrap">
+                <p />
+                <p>
+                  Монголиан Майнинг Корпорацийн дотоодын зөвлөхөөр
+                  ажиллаж,&nbsp;700 сая ам.долларын IPO болон 600 сая
+                  ам.долларын Бондыг Хонконгын хөрөнгийн бирж дээр 2010 онд
+                  анхдагч хувьцаа, 2012 он болон 2014 онд өрийн бичиг шинээр
+                  гаргаж, хөрөнгө босгох ажиллагаанд тус тус оролоцож, эрх зүйн
+                  дүн шинжилгээ хийж хамтран ажилласан.{" "}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </Modal>
 
-      <div id="myModal143" className="modal fade" role="dialog">
+      <Modal
+        open={modal143}
+        onClose={handleClose143}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        {/* <div id="myModal143" className="modal fade" role="dialog"> */}
         <div className="modal-dialog">
-          {/* Modal content*/}
           <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose143}
+            >
               ×
             </button>
             <div className="modal-body">
@@ -402,12 +443,23 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="myModal144" className="modal fade" role="dialog">
+        {/* </div> */}
+      </Modal>
+
+      <Modal
+        open={modal144}
+        onClose={handleClose144}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <div className="modal-dialog">
-          {/* Modal content*/}
           <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose144}
+            >
               ×
             </button>
             <div className="modal-body">
@@ -430,12 +482,23 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="myModal141" className="modal fade" role="dialog">
+      </Modal>
+
+      <Modal
+        open={modal141}
+        onClose={handleClose141}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <div className="modal-dialog">
           {/* Modal content*/}
           <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose141}
+            >
               ×
             </button>
             <div className="modal-body">
@@ -452,12 +515,23 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="myModal142" className="modal fade" role="dialog">
+      </Modal>
+
+      <Modal
+        open={modal142}
+        onClose={handleClose142}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <div className="modal-dialog">
           {/* Modal content*/}
           <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose142}
+            >
               ×
             </button>
             <div className="modal-body">
@@ -475,12 +549,23 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="myModal139" className="modal fade" role="dialog">
+      </Modal>
+
+      <Modal
+        open={modal139}
+        onClose={handleClose139}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <div className="modal-dialog">
           {/* Modal content*/}
           <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose139}
+            >
               ×
             </button>
             <div className="modal-body">
@@ -499,12 +584,22 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="myModal138" className="modal fade" role="dialog">
+      </Modal>
+
+      <Modal
+        open={modal138}
+        onClose={handleClose138}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <div className="modal-dialog">
-          {/* Modal content*/}
           <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose138}
+            >
               ×
             </button>
             <div className="modal-body">
@@ -524,12 +619,22 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="myModal137" className="modal fade" role="dialog">
+      </Modal>
+
+      <Modal
+        open={modal137}
+        onClose={handleClose137}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <div className="modal-dialog">
-          {/* Modal content*/}
           <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose137}
+            >
               ×
             </button>
             <div className="modal-body">
@@ -548,12 +653,22 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="myModal136" className="modal fade" role="dialog">
+      </Modal>
+
+      <Modal
+        open={modal136}
+        onClose={handleClose136}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <div className="modal-dialog">
-          {/* Modal content*/}
           <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose136}
+            >
               ×
             </button>
             <div className="modal-body">
@@ -574,12 +689,23 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="myModal134" className="modal fade" role="dialog">
+      </Modal>
+
+      <Modal
+        open={modal134}
+        onClose={handleClose134}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <div className="modal-dialog">
           {/* Modal content*/}
           <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose134}
+            >
               ×
             </button>
             <div className="modal-body">
@@ -598,12 +724,23 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="myModal135" className="modal fade" role="dialog">
+      </Modal>
+
+      <Modal
+        open={modal135}
+        onClose={handleClose135}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <div className="modal-dialog">
           {/* Modal content*/}
           <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose135}
+            >
               ×
             </button>
             <div className="modal-body">
@@ -620,12 +757,22 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="myModal132" className="modal fade" role="dialog">
+      </Modal>
+
+      <Modal
+        open={modal132}
+        onClose={handleClose132}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
         <div className="modal-dialog">
-          {/* Modal content*/}
           <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
+            <button
+              type="button"
+              className="close"
+              data-dismiss="modal"
+              onClick={handleClose132}
+            >
               ×
             </button>
             <div className="modal-body">
@@ -643,127 +790,7 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
-      <div id="myModal50" className="modal fade" role="dialog">
-        <div className="modal-dialog">
-          {/* Modal content*/}
-          <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
-              ×
-            </button>
-            <div className="modal-body">
-              <h2>
-                Сингапурын Хөрөнгийн Биржид бонд бүртгүүлэх ажил (2019 оны 4-р
-                сар)
-              </h2>
-              <div className="wrap">
-                <p>
-                  Хонг Конгийн Хөрөнгийн Биржид бүртгэлтэй Монголиан Майнинг
-                  Корпорэйшн, түүний шууд бус охин компани болох Энержи Ресурс
-                  ХХК-ийн олон улсын хөрөнгийн зах зээлд өрийн бичиг гаргах
-                  ажиллагаанд зөвлөсөн.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="myModal48" className="modal fade" role="dialog">
-        <div className="modal-dialog">
-          {/* Modal content*/}
-          <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
-              ×
-            </button>
-            <div className="modal-body">
-              <h2>
-                Торонтогийн Хөрөнгийн Бирж, Монголын Хөрөнгийн Бирж дээрх давхар
-                бүртгэл (2018 оны 6-р сар) ﻿
-              </h2>
-              <div className="wrap">
-                <p>
-                  Канадын Торонтогийн хөрөнгийн биржид бүртгэлтэй Эрдэнэ Ресурс
-                  Девелопмент Корпорэйшн Компанийн шинээр гаргасан хувьцааг
-                  Монголын Хөрөнгийн Биржид давхар бүртгэх ажиллагааг хийсэн.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="myModal47" className="modal fade" role="dialog">
-        <div className="modal-dialog">
-          {/* Modal content*/}
-          <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
-              ×
-            </button>
-            <div className="modal-body">
-              <h2>
-                Боловсрол сургалтын байгууллагуудад зөвлөх, бүртгүүлэх ажиллагаа
-                (2015-2019)
-              </h2>
-              <div className="wrap">
-                <p>
-                  Техник технологийн дээд сургууль, Монгол Германы хамтарсан
-                  38-р сургууль, Интернэшнл скүүл, Монгени цогцолбор сургууль
-                  зэрэг боловсрол сургалтын байгууллагуудад зөвлөх үйлчилгээ
-                  үзүүлж ажилласан.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="myModal49" className="modal fade" role="dialog">
-        <div className="modal-dialog">
-          {/* Modal content*/}
-          <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
-              ×
-            </button>
-            <div className="modal-body">
-              <h2>
-                Тусгай зөвшөөрөлд хууль зүйн дүн шинжилгээ хийх ажиллагаа (2015)
-              </h2>
-              <div className="wrap">
-                <p>
-                  Тэвшийн Говь цахилгаан станцын төсөлтэй холбогдуулан ашигт
-                  малтмалын ашиглалтын тусгай зөвшөөрөлтэй хуулийн этгээд болон
-                  эрчим хүчний барилга байгууламж барих тусгай зөвшөөрөлтэй
-                  хуулийн этгээдийн үйл ажиллагаанд хууль зүйн дүн шинжилгээ
-                  хийсэн. (2015)
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="myModal45" className="modal fade" role="dialog">
-        <div className="modal-dialog">
-          {/* Modal content*/}
-          <div className="modal-content">
-            <button type="button" className="close" data-dismiss="modal">
-              ×
-            </button>
-            <div className="modal-body">
-              <h2>
-                Торонтогийн хөрөнгийн бирж дээр IPO гаргах ажил (2018 оны 5-р
-                сар)
-              </h2>
-              <div className="wrap">
-                <p>
-                  Монголын уул, уурхайн салбарт үйл ажиллагаа явуулдаг Стэп Голд
-                  ХХК-ийн толгой компани болох Степ Голд Лимитэд компанийг
-                  Канадын Торонтогийн хөрөнгийн биржид бүртгэлтэй, нээлттэй
-                  компани болох ажилд Монгол Улсын хуулиар дүгнэлт
-                  боловсруулсан.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </Modal>
     </div>
   );
 }
