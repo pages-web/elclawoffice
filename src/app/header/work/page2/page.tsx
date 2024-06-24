@@ -5,7 +5,7 @@ import React from "react";
 import Modal from "@mui/material/Modal";
 import { useState } from "react";
 
-export default function page() {
+export default function Page() {
   const [modal50, setModal50] = useState(false);
   const [modal45, setModal45] = useState(false);
   const [modal47, setModal47] = useState(false);

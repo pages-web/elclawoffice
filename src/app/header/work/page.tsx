@@ -4,11 +4,9 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 import Modal from "@mui/material/Modal";
-import { Box, Button, Typography } from "@mui/material";
 
-export default function page() {
+export default function Page() {
   const [modal132, setModal132] = useState(false);
-  const [modal133, setModal133] = useState(false);
   const [modal134, setModal134] = useState(false);
   const [modal135, setModal135] = useState(false);
   const [modal136, setModal136] = useState(false);
@@ -20,10 +18,6 @@ export default function page() {
   const [modal143, setModal143] = useState(false);
   const [modal144, setModal144] = useState(false);
   const [modal145, setModal145] = useState(false);
-  const [modal45, setModal45] = useState(false);
-  const [modal47, setModal47] = useState(false);
-  const [modal48, setModal48] = useState(false);
-  const [modal49, setModal49] = useState(false);
 
   const handleOpen145 = () => setModal145(true);
   const handleClose145 = () => setModal145(false);
