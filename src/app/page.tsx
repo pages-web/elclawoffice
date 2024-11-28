@@ -1,10 +1,7 @@
-import Image from "next/image";
-import Layout from "@/component/layout/page";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return (
-    <div>
-      <Layout />
-    </div>
-  );
-}
+const DefaultPage = () => {
+  redirect("/mn");
+};
+
+export default DefaultPage;
