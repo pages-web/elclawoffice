@@ -14,9 +14,6 @@ export default async function Page({
 }) {
   const code = params.locale === "mn" ? "news" : "news-en";
   const { articles } = await getKbArticlesByCode(code);
-  const reversedArticles = [...articles].reverse();
 
-  return (
-    <NewsContent locale={params.locale} reversedArticles={reversedArticles}/>
-  );
+  return <NewsContent locale={params.locale} reversedArticles={articles} />;
 }
